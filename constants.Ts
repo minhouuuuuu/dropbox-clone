@@ -1,4 +1,4 @@
-export const COLOR_EXTENSION_MAP: {[key: string]: string;} = {
+export const COLOR_EXTENSION_MAP: { [key: string]: string } = {
     pdf: "#0160FE",
     doc: "#2B579A",
     docx: "#2B579A",
@@ -25,9 +25,9 @@ export const COLOR_EXTENSION_MAP: {[key: string]: string;} = {
     log: "#800080",
     md: "#9932CC",
     yml: "#808000",
-    ai: "#FF4500",   
-    psd: "#001EFF",  
-    indd: "#FF4500", 
-    ae: "#00FF00",   
+    ai: "#FF4500",
+    psd: "#001EFF",
+    indd: "#FF4500",
+    ae: "#00FF00",
     prproj: "#00FF00",
 };
