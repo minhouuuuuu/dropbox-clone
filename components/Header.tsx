@@ -2,6 +2,7 @@ import { SignIn, SignInButton, SignedOut, UserButton } from "@clerk/nextjs"
 import Image from "next/image"
 import Link from "next/link"
 import { ThemeToggler } from "./ThemeToggler"
+import { ArrowRight } from "lucide-react"
 
 
 const Header = () => {
@@ -26,7 +27,12 @@ const Header = () => {
 			<UserButton afterSignOutUrl="/" />
 
 			<SignedOut>
-				<SignInButton afterSignInUrl="/dashboard" mode="modal"/>
+				<SignInButton afterSignInUrl="/dashboard" mode="modal">
+					<div className="flex cursor-pointer bg-blue-500 px-4 py-2.5 w-fit text-white font-bold justify-center items-center mx-auto">
+						Get Started
+						<ArrowRight className="ml-4"/>
+					</div>
+				</SignInButton>
 			</SignedOut>
 		</div>
     </header>

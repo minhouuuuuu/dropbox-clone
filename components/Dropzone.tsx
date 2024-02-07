@@ -78,10 +78,10 @@ function Dropzone() {
                         <div 
                             {...getRootProps()}
                             className={cn(
-                                "mx-auto max-w-7xl h-52 flex flex-col text-zinc-700 gap-1 justify-center items-center border border-dashed rounded-lg text-center text-xl hover:bg-slate-100 cursor-pointer",
+                                "mx-auto max-w-7xl h-52 flex flex-col text-zinc-700 gap-1 justify-center items-center border border-dashed rounded-lg text-center text-xl hover:bg-slate-200 dark:hover:bg-slate-800 cursor-pointer",
                                 isDragActive 
-                                    ? "bg-[#4581e8] text-white"
-                                    : "bg-slate-100/50 dark:bg-slate-800/80 font-semibold text-zinc-700 dark:text-zinc-100" 
+                                ? "bg-[#4581e8] dark:bg-[#fff]"
+                                    : "bg-slate-100/60 dark:bg-slate-800/70 font-semibold text-zinc-700 dark:text-zinc-100" 
                             )}
                         >
                             <Cloud className={cn("w-7 h-7", 
@@ -92,7 +92,7 @@ function Dropzone() {
                             />
                             <input {...getInputProps()} />
                             {!isDragActive && 'Drop a file to upload!'}
-                            {isDragActive && !isDragReject && "Drop it like it's hot! 🥵"}
+                            {isDragActive && !isDragReject && <span className="text-white font-bold text-xl dark:text-white">Drop it like it's hot! 🥵</span>}
                             {isDragReject && "File type not accepted, sorry!"}
                             {isFileTooLarge && (
                                 <div className="text-danger mt-2">
