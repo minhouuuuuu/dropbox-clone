@@ -92,7 +92,7 @@ function Dropzone() {
                             />
                             <input {...getInputProps()} />
                             {!isDragActive && 'Drop a file to upload!'}
-                            {isDragActive && !isDragReject && <span className="text-white font-bold text-xl dark:text-white">Drop it like it's hot! 🥵</span>}
+                            {isDragActive && !isDragReject && <span className="text-white font-bold text-xl dark:text-white">Drop it like it&apos;s hot! 🥵</span>}
                             {isDragReject && "File type not accepted, sorry!"}
                             {isFileTooLarge && (
                                 <div className="text-danger mt-2">
