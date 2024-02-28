@@ -96,7 +96,7 @@ function Dropzone() {
                             {isDragReject && "File type not accepted, sorry!"}
                             {isFileTooLarge && (
                                 <div className="text-danger mt-2">
-                                    File is too large.
+                                    File is too large 🙁
                                 </div> 
                             )}
                             <p 
