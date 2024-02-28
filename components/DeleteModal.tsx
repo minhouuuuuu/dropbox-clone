@@ -54,7 +54,8 @@ export function DeleteModal() {
             <DialogHeader>
             <DialogTitle>Are you sure to delete? </DialogTitle>
             <DialogDescription>
-                This action cannot be undone 😵 This will permanently delete your file!
+                Minh is kinda suck at Google Firebase 😵<br/>
+                This action can not be done, sorry for that 😃
             </DialogDescription>
             </DialogHeader>
             
